@@ -1,0 +1,3 @@
+ssh
+
+Eg: ssh localhost

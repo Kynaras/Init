@@ -1,6 +1,8 @@
-#!/bin/sh
-echo WARNING $USER IS NOW BEING DELETED!!!!
+!/bin/sh
+echo WARNING $1 IS NOW BEING DELETED!!!!
 
- sudo rm -r /home/$USER
- sudo userdel $USER
- sudo killall -u $USER
+ #sudo rm -r /home/$1 - too traumatised
+ sudo killall -u $1
+ sudo userdel -f $1
+
+ echo $1 has been deleted!
